@@ -185,7 +185,7 @@ input:focus {
 
 .projects > div {
     background-color: white;
-    border-left: 5px solid #503D42;
+    border-left: 7px solid #503D42;
     border-radius: 5px;
     box-shadow: 0px 5px 5px -5px rgb(0, 0, 0, 0.4);
     padding: 20px;
@@ -251,4 +251,24 @@ input:focus {
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.trending-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.trending-content div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+
+.trending-content .usernames {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
