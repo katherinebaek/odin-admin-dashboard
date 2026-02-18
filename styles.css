@@ -39,6 +39,9 @@ body {
 }
 
 .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     font-size: 1.4rem;
     font-weight: 600;
     color: #111e1f;
