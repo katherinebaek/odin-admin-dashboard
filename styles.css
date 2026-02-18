@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100%;
 }
 
 button {
@@ -58,7 +61,7 @@ button {
 
 /* header section */
 .header-container {
-    box-shadow: 0px 0px 3px 5px rgba(110, 110, 110, 0.3);
+    box-shadow: 0px 5px 5px -5px rgb(0, 0, 0, 0.4);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -182,7 +185,30 @@ input:focus {
 
 .projects > div {
     background-color: white;
+    border-left: 5px solid #503D42;
     border-radius: 5px;
+    box-shadow: 0px 5px 5px -5px rgb(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description, .announcements-description {
+    color: grey;
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.project-tools {
+    display: flex;
+    gap: 5px;
+    margin-top: auto;
+    justify-content: end;
+}
+
+.project-tools span {
+    font-size: 18px;
+    color: #464646;
 }
 
 .announcements, .trending {
@@ -193,11 +219,34 @@ input:focus {
 
 .announcements-content, .trending-content {
     background-color: white;
+    box-shadow: 0px 5px 5px -5px rgb(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
+.contents > h4 {
+    color: #111e1f;
+}
+
+
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
+}
+
+.announcements-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.announcements-content > div {
+    padding: 20px;
+}
+
+.announcements-2 {
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
 }
 
 .trending {
