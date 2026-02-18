@@ -4,36 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <title>Admin Dashboard</title>
 </head>
 <body>
     <section class="sidebar">
         <section class="title">Dashboard</section>
         <section class="function-tabs">
-            <div class="home">Home</div>
-            <div class="profile">Profile</div>
-            <div class="messages">Messages</div>
-            <div class="tasks">Tasks</div>
-            <div class="history">History</div>
-            <div class="communities">Communities</div>
+            <div class="tab" class="home">
+                <span class="material-symbols-outlined">home</span>
+                Home
+            </div>
+
+            <div class="tab" class="profile">
+                <span class="material-symbols-outlined">id_card</span>
+                Profile
+            </div>
+
+            <div class="tab" class="messages">
+                <span class="material-symbols-outlined">mode_comment</span>
+                Messages
+            </div>     
+
+            <div class="tab" class="history">
+                <span class="material-symbols-outlined">history</span>
+                History
+            </div>
+
+            <div class="tab" class="tasks">
+                <span class="material-symbols-outlined">file_copy</span>
+                Tasks
+            </div>
+
+            <div class="tab" class="communities">
+                <span class="material-symbols-outlined">groups</span>
+                Communities
+            </div>
         </section>
 
         <section class="misc-tabs">
-            <div class="settings">Settings</div>
-            <div class="support">Support</div>
-            <div class="privacy">Privacy</div>
+            <div class="tab" class="settings">
+                <span class="material-symbols-outlined">settings</span>
+                Settings
+            </div>
+            <div class="tab" class="support">
+                <span class="material-symbols-outlined">contact_support</span>
+                Support
+            </div>
+            <div class="tab" class="privacy">
+                <span class="material-symbols-outlined">privacy_tip</span>
+                Privacy
+            </div>
         </section>
     </section>
 
     <section class="container">
     
-        <section class="header">
+        <section class="header-container">
 
+            <section class="top-header">
+                <section class="search">
+                    <button id="search-button">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                    <input type="search" name="searchbar" id="searchbar">
+                </section>
+                
+                <section class="notifications">
+                    <button id="notifications-button">
+                        <span class="material-symbols-outlined">notifications_active</span>
+                    </button>
+                </section>
+                
+                <section class="profile">
+                    <img src="profile-picture.png" class="profile-pic" alt="default profile picture">
+                    <div class="username">Katherine Baek</div>
+                </section>
+            </section>
+
+            <section class="bottom-header">
+                <img src="profile-picture.png" class="profile-pic" alt="default profile picture">
+                <div class="hi-there-username">Hi there,<br>Katherine Baek (@Katherine)</div>
+                <section class="user-buttons">
+                    <button id="new">New</button>
+                    <button id="upload">Upload</button>
+                    <button id="share">Share</button>
+                </section>
+            </section>
+
+            
         </section>
         
         <section class="contents">
             <section class="projects">
                 <div class="project-1"></div>
+
                 <div class="project-2"></div>
                 <div class="project-3"></div>
                 <div class="project-4"></div>
