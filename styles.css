@@ -11,6 +11,11 @@ body {
     grid-template-columns: 1fr 3fr;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 /* sidebar section */
 .sidebar {
     background-color: #b5ca8d;
@@ -42,13 +47,12 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+
     font-size: 1.4rem;
     font-weight: 600;
     color: #111e1f;
 }
 
-.function-tabs {
-}
 
 /* header section */
 .header-container {
@@ -57,12 +61,12 @@ body {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    gap: 10px;
 
 }
 
 .top-header, .bottom-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -75,11 +79,6 @@ body {
 .search {
     display: flex;
     gap: 10px;
-}
-
-button {
-    background: none;
-    border: none;
 }
 
 .header-container span{
@@ -101,21 +100,31 @@ button {
 
 }
 
-.profile {
+.profile, .profile-intro {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-.profile > div {
+.username {
+    color: #111e1f;
     display: flex;
     align-items: center;
 }
 
-.profile > img {
-    width: 36px;
-    height: 36px;
+.text {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+   
+}
+.profile-intro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.bottom-header > img {
+.profile-pic {
     width: 36px;
     height: 36px;
 }
@@ -124,6 +133,11 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.hi-there-username {
+    display: flex;
+    align-items: center;
 }
 
 .user-buttons > button {
