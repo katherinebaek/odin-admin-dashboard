@@ -61,8 +61,7 @@ button {
 .header-container {
     box-shadow: 0px 5px 5px -5px rgb(0, 0, 0, 0.4);
     z-index: 1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     padding: 15px;
     gap: 10px;
 
@@ -70,17 +69,21 @@ button {
 
 .top-header, .bottom-header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .top-header > section {
     display: flex;
     align-items: center;
+
 }
 
 .search {
     display: flex;
+    align-items: center;
     gap: 10px;
+    flex: 1;
 }
 
 .header-container span{
@@ -93,12 +96,18 @@ button {
 }
 
 #searchbar {
-    width: 350px;
-    height: 25px;
+    flex: 1;
+    min-width: 30px;
+    height: 30px;
     border-radius: 20px;
     border: 0px;
     background-color: rgb(223, 223, 223);
     padding: 10px;
+}
+
+#notifications-button {
+    padding-right: 20px;
+    flex: 1 2 auto;
 }
 
 .profile, .profile-intro {
@@ -114,7 +123,7 @@ button {
 }
 
 .text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
    
@@ -122,11 +131,13 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex: 1;
 }
 
 .profile-pic {
     width: 36px;
     height: 36px;
+    flex-shrink: 0;
 }
 
 .user-buttons {
@@ -138,6 +149,7 @@ button {
 .hi-there-username {
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
 }
 
 .user-buttons > button {
@@ -145,7 +157,8 @@ button {
     background-color: #8bb174;
     border-radius: 15px;
     height: 30px;
-    width: 80px;
+    padding: 0 30px 0px 30px;
+    flex: 1;
     color: white;
 }
 
@@ -189,23 +202,28 @@ input:focus {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 .project-description, .announcements-description {
     color: grey;
-    font-size: 0.9rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
 }
 
 .project-tools {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     margin-top: auto;
     justify-content: end;
 }
 
 .project-tools span {
-    font-size: 18px;
+    font-size: 24px;
     color: #464646;
 }
 
@@ -233,14 +251,16 @@ input:focus {
 .announcements-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
     padding: 20px;
 }
 
 .announcements-content > div {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
 
 .announcements-2 {
     border-top: 1px solid rgb(199, 199, 199);
@@ -274,3 +294,4 @@ input:focus {
 .trending-description {
     color: #464646;
     font-size: 1rem;
+}
